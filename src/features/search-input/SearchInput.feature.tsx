@@ -11,7 +11,7 @@ interface SearchInputProps {
 
 export const SearchInput:FC<SearchInputProps> = ({className}) => {
     const [query, setQuery] = useState('');
-    const [getJokes, {data, error, isError, isLoading}] = useLazyGetJokesQuery();
+    const [getJokes, {data}] = useLazyGetJokesQuery();
     const dispatch = useAppDispatch()
 
     const onInput:FormEventHandler<HTMLInputElement> = (event) => {

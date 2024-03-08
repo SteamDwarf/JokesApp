@@ -1,9 +1,7 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { JokeResponse } from "./types";
+import { api } from "app";
 
-export const jokesApi = createApi({
-    reducerPath: 'jokesApi',
-    baseQuery: fetchBaseQuery({baseUrl: 'https://api.chucknorris.io/jokes'}),
+export const jokesApi = api.injectEndpoints({
     endpoints: (builder) => ({
         getJokes: builder.query<JokeResponse, string>({
             query: (query) => `search?query=${query}`

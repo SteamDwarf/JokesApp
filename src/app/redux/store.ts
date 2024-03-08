@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { reducer } from "./reducer";
-import { jokesApi } from "entities/JokeItem";
+import { api } from "./api";
 
 export const store = configureStore({
     reducer: reducer,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(jokesApi.middleware)
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api.middleware)
 })
 
 export type StoreState = ReturnType<typeof store.getState>;

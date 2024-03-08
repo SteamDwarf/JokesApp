@@ -1,4 +1,4 @@
-import { JokeItem, useGetJokesQuery } from "entities/JokeItem";
+import { JokeItem } from "entities/JokeItem";
 import { FC } from "react";
 import styles from './JokesContainer.module.css';
 import { classNames } from "shared/libs";

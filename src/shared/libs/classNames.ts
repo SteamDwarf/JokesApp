@@ -7,7 +7,7 @@ export const classNames = (...classes: (string | OptionalClassName | undefined)[
     classes.forEach((c) => {
         if (typeof c === 'string') classString += ` ${c}`;
         if (typeof c === 'object') {
-            Object.entries(c).filter(([k, v]) => v).forEach(([k, v]) => { classString += ` ${k}`; });
+            Object.entries(c).filter(([, v]) => v).forEach(([k,]) => { classString += ` ${k}`; });
         }
     });
 

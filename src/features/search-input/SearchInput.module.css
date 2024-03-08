@@ -1,0 +1,13 @@
+.searchInput {
+    width: 626px;
+    padding: 19px 0px 19px 30px;
+    font-size: 22px;
+    line-height: 26.4px;
+}
+
+.jokesCount {
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,1 @@
+export {JokesContainer} from './JokesContainer.widget';

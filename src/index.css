@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Fira Sans";
+  src: url(assets/fonts/FiraSans/FiraSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(assets/fonts/FiraSans/FiraSans-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}

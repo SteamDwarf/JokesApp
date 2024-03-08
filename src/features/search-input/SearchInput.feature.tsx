@@ -34,8 +34,9 @@ export const SearchInput:FC<SearchInputProps> = ({className}) => {
     }, [data])
 
     return(
-        <section className={className}>
+        <section className={classNames(className, styles.container)}>
             <Input 
+                autoFocus
                 value={query}
                 aria-describedby="jokes-count" 
                 placeholder="Search jokes..." 

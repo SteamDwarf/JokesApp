@@ -1,4 +1,4 @@
-import { JokeItem } from "entities/JokeItem";
+import { JokeItem, useGetJokesQuery } from "entities/JokeItem";
 import { FC } from "react";
 import styles from './JokesContainer.module.css';
 import { classNames } from "shared/libs";
@@ -13,7 +13,16 @@ export const JokesContainer:FC<JokesContainerProps> = ({className}) => {
 
     return (
         <main className={classNames(styles.jokesContainer, className)}>
-            {jokes.map(j => <JokeItem id={j.id} text={j.value} date={j.created_at} url={j.url}/>)}
+            {jokes.map(j => (
+                <JokeItem 
+                    id={j.id}
+                    key={j.id} 
+                    text={j.value} 
+                    date={j.created_at} 
+                    url={j.url}
+                    className={styles.jokeItem}
+                />
+            ))}
         </main>
     );
 }

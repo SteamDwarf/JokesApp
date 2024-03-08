@@ -5,3 +5,30 @@
     column-gap: 2%;
     justify-content: center;
 }
+
+.jokeItem {
+    flex: 31%;
+    height: 150px;
+}
+
+.jokeItem:nth-of-type(1), .jokeItem:nth-of-type(2) {
+    flex: 48%;
+    /* width: 49%; */
+}
+
+@media screen and (max-width: 1480px) {
+    .jokeItem {
+        flex: 48%;
+    }
+
+    .jokeItem:nth-of-type(1) {
+        flex: 98%;
+    }
+    
+}
+
+@media screen and (max-width: 780px){
+    .jokeItem {
+        flex: 98%;
+    }
+}

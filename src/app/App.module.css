@@ -1,7 +1,13 @@
 .app {
-    padding: 128px 160px 0px;
+    padding: 128px 160px;
 }
 
 .jokesContainer {
     margin-top: 60px;
+}
+
+@media screen and (max-width: 1080px) {
+    .app {
+        padding: 128px 16px;
+    }
 }

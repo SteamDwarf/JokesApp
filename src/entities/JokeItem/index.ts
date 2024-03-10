@@ -3,7 +3,12 @@ import {jokesSlice} from './api/jokesSlice.slice';
 
 
 export const {useGetJokesQuery, useLazyGetJokesQuery} = jokesApi;
-export const {save: saveJokes} = jokesSlice.actions;
+export const {
+    save: saveJokes,
+    setLastIndex: setLastJokeIndex,
+    setStatus: setJokesFetchStatus,
+    setError: setJokesFetchError
+} = jokesSlice.actions;
 export const resetJokesApi = jokesApi.util.resetApiState;
 
 export { jokesApi } from './api/jokesApi.api';

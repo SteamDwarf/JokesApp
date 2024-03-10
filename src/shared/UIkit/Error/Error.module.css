@@ -1,0 +1,10 @@
+.errorContainer {
+    padding: 16px;
+    border: 2px solid rgb(189, 11, 11);
+}
+
+.errorText {
+    color: rgb(189, 11, 11);
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+}

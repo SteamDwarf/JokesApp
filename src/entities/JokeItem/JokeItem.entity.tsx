@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import styles from './JokeItem.module.css';
 import { classNames } from "shared/libs";
 
@@ -10,7 +10,7 @@ interface JokeItemProps {
     className?: string
 }
 
-export const JokeItem:FC<JokeItemProps> = ({text, date, id, url, className}) => {
+export const JokeItem:FC<JokeItemProps> = memo(({text, date, id, url, className}) => {
     return (
         <a href={url} className={classNames(className, styles.jokeLink)} target='_blank'>
             <article className={styles.jokeItem}>
@@ -23,4 +23,4 @@ export const JokeItem:FC<JokeItemProps> = ({text, date, id, url, className}) => 
         </a>
         
     );
-}
+})

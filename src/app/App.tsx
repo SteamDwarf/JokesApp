@@ -1,4 +1,4 @@
-import { Header } from 'widgets/Header';
+import { Header } from 'widgets/header';
 import styles from './App.module.css';
 import { JokesContainer } from 'widgets/JokesContainer';
 

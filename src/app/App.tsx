@@ -1,5 +1,5 @@
 import styles from './App.module.css';
-import { Header } from 'widgets/header';
+import { Header } from 'widgets/Header';
 import { JokesContainer } from 'widgets/JokesContainer';
 
 function App() {

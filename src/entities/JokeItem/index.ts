@@ -5,7 +5,6 @@ import {jokesSlice} from './api/jokesSlice.slice';
 export const {useGetJokesQuery, useLazyGetJokesQuery} = jokesApi;
 export const {
     save: saveJokes,
-    setLastIndex: setLastJokeIndex,
     setStatus: setJokesFetchStatus,
     setError: setJokesFetchError
 } = jokesSlice.actions;
